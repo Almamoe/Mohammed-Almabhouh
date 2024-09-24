@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about Me">About Me</a>
+        <a href="#contact me">Contact</a>
+        <a href="#work experience">Work Experience</a>
+    </div>
+
+    <!-- Centered Introduction -->
+    <div style="padding-right: 25px">
+        <h2>Mohammed Almabhouh</h2>
+        <p>Software Engineering Student At Western University</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home"></section>
+    <img src="w3images/Pic1.jpg" alt="">
+    <div class="hero-text">
+        <h1 style="font-size:50px">Hello I am Mohammed Almabhouh</h1>
+        <p>I am a Software Engineer at Western University</p>
+        <button>Hire me</button>
+    </div>
+
+    <p></p>
+
+    <!-- About Section -->
+    <section id="about Me"></section>
+    <div class="about-section">
+        <section id="work"></section>
+        <h1>About Me</h1>
+        <p>I am a second-year software engineering student. My hobbies are traveling, horse riding, boxing, and reading.</p>
+        <p>My Resume: <a target="_blank" href="Resume/Resume.pdf">Resume</a></p>
+        <p>.</p>
+    </div>
+
+    <!-- Work Experience Section -->
+    <h2 style="text-align:center">Work Experience</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <section id="work experience"></section>
+                <img src="w3images/Pic2.jpg" alt="" style="width:50%">
+                <div class="container">
+                    <h2>Seasons Landscaping</h2>
+                    <p class="title">Web Designer & Marketer</p>
+                    <p>Developed marketing solutions using Google Ads, Facebook campaigns, and Kijiji listings, resulting in an 80% increase in targeted traffic and significantly improving customer engagement and brand visibility. Managed a team of 5 employees serving over 70 properties. Designed and developed a website using WordPress and Vistaprint, which led to a notable increase in website traffic and enhanced online presence.</p>
+                    <p>April 2022 - Sept 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="w3images/download.png" alt="" style="width:50%">
+                <div class="container">
+                    <h2>Campus Creative</h2>
+                    <p class="title">Web Designing Coop</p>
+                    <p>Used WordPress to develop and manage websites, including theme customization, plugin configuration, and content management to meet specific business needs, resulting in a 70% increase in website traffic. Operated 3D printers to design and produce prototypes, optimizing settings for precision and material efficiency while troubleshooting hardware and software issues to maintain smooth functionality. Created 3D animations and enhanced visuals using Photoshop, integrating detailed textures and effects to produce high-quality, visually appealing designs.</p>
+                    <p>Oct 2021 - Jan 2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="w3images/Pic3.jpeg" alt="" style="width:50%">
+                <div class="container">
+                    <h2>Northern Black Dragon</h2>
+                    <p class="title">Martial Arts Teacher</p>
+                    <p>Led classes for students of various skill levels, teaching martial arts techniques, self-discipline, and physical fitness. Developed personalized training plans, improving student performance and retention. Managed group sessions of 30+ students, fostering a positive and structured learning environment. Organized and conducted belt grading examinations, helping students progress in their martial arts journey. Mentored students in preparation for local and regional martial arts competitions, contributing to several student victories.</p>
+                    <p>2022 Sept - 2024 Nov</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <h2>Contact</h2>
+    <p></p>
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Me</h2>
+            <p>Send me an email at MALMABHO@uwo.ca or connect with me on LinkedIn:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <section id="contact me"></section>
+                <img src="w3images/Pic4.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
