@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Page Title</title>
+    <title>Mohammed's Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <div class="topnav">
         <a class="active" href="#home">Home</a>
@@ -15,12 +17,6 @@
         <a href="#contact me">Contact</a>
         <a href="#work experience">Work Experience</a>
     </div>
-
-    <!-- Centered Introduction -->
-    <div style="padding-right: 25px">
-        <center><h2>Mohammed Almabhouh</h2>
-        <p>Software Engineering Student At Western University</p>
-        <p><a href="https://www.linkedin.com/in/mohammed-almabhouh-9867141b5/" target="_blank">LinkedIn</a></p></center>
     </div>
 
     <!-- Hero Section -->
@@ -30,21 +26,80 @@
             <h1 style="font-size:50px">Hello, I am Mohammed Almabhouh</h1>
             <p>I am a Software Engineer at Western University</p>
         </div>
-        <div style="text-align: center;">
-            <img src="w3images/Pic1.jpg" alt="" style="width: 100;">
-
+        <div class="section__pic-container">
+            <img src="w3images/Alma Pic.jpg" alt="Mohammed Almabhouh" class = "main-pic" >
         </div>
-    </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1 class="titel">Mohammed Almabhouh</h1>
+            <p class="section__text__p2">Aspiring Software Engineer</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2"
+                onclick="window.open('w3images/Mohammed Resume.pdf')"
+            >
+            Download CV 
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="w3images/linkdin.jpg"
+                alt="Linkdin Profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/mohammed-almabhouh-9867141b5'"
+            />
+            <img src="w3images/Github.png"
+            alt="Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/Almamoe'"
+            /> 
+            </div>
+            </div>
+        </section>
+        </div>
+
 
     <!-- About Section -->
+     <div class="section" id="section1">
     <section id="about Me"></section>
-    <div class="about-section">
-        <section id="work"></section>
-        <h1>About Me</h1>
-        <p>I am an engineering student with a strong passion for software engineering. I have experience working with Java and Python and have been involved in projects like Stride-Speak, a photographic translator for the visually impaired. In addition to my studies, I run a landscaping business called Seasons Landscaping, where I've gained web design experience using HTML and CSS. I also enjoy hobbies like horseback riding, soccer, and boxing, which help me stay active and balanced. My experience teaching martial arts has developed my leadership skills. I’m always eager to learn more and grow, constantly seeking new opportunities to improve both personally and professionally.
-        </p>
+    <p class="section__text__p1">More About Me</p>
+    <h1 class="title">About Me</h1>
+    <div class="section__pic-container">
+        <img src="w3images/Almapic.jpg"
+        alt="Profile picture"
+        class="about-pic"
+        />
     </div>
-
+    <div class="about-details-continer">
+        <div class="about-containers">
+            <div class="details-container-2">
+                <img src ="w3images/Education.jpeg"
+                alt="Education icon"
+                class="icon"
+                />
+                <h3>Education</h3>
+                <p>Student of <br/> Bachelor of Engineering Science<br /> Software Engineering</p>
+                </div>
+                </div>
+                <div class="text-container">
+                    <p>Hello! I'm Mohammed Almabhouh, a passionate software engineering student with a keen interest in cybersecurity and technology.</p>
+                </p><br>
+                    <p>I have experience programming in languages like Java, Python, and JavaScript, which has allowed me to build a range of projects. My journey into tech has led me to explore areas like web design and networking, always driven by curiosity and a desire to keep learning.</p>
+            </p><br> 
+                    <p>As a Google-certified cybersecurity specialist, I am continually enhancing my knowledge of security fundamentals and best practices. These certifications reflect my commitment to developing a solid foundation in cybersecurity and applying it to real-world challenges.</p>
+                    <p><br>  
+                    <p>One of my recent projects is a web-based course designed to help tourists in Canada learn essential driving rules. Developed with input from the Ministry of Transportation, this course includes video tutorials and practical, real-world scenarios that encourage users to visualize and understand Canadian road regulations. Inspired by traditional driver’s education, it aims to enhance road safety for tourists and help them feel more confident when driving in Canada.</p>
+                    <p><br>   
+                    <p>Another project I am proud of is a photographic translator designed for visually impaired users. This device, powered by an Arduino and OCR technology, captures and translates on-screen text to enhance the experience of visually impaired users on elliptical machines. This project was a rewarding challenge, as it combined my skills in hardware and software to create an accessible solution for those with vision impairments.</p>
+                </p>       
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
     <!-- Work Experience Section -->
     <h2 style="text-align:center">Work Experience</h2>
     <div class="row">
@@ -87,41 +142,39 @@
     </div>
 
     <!-- Contact Section -->
-    <h2>Contact</h2>
-
-    <div class="container">
-        <div style="text-align:center">
-            <h2>Contact Me</h2>
-            <p>Send me an email at MALMABHO@uwo.ca or connect with me on LinkedIn:</p>
+    <div class="section" id="section2">
+        <section id="contact">
+            <p class="section__text__p1">Contact Information</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <img src="w3images/Gamiljpg"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:almamoha664@gmail.com" class = "contactText">almamoha664@gmail.com</a></p>
+                </div>
+                <div class="contact-info-contaainer">
+                    <img src="w3images/linkdin.jpg"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/mohammed-almabhouh-9867141b5" class = "contactText">in/mohammedalmabhouh</a></p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="row">
-            <div class="column">
-                <section id="contact me"></section>
-                <img src="w3images/Pic4.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <form action="/action_page.php">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
-
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                      <li><a href="index.html#about">About</a></li>
+                      <li><a href="experience.html#experience">Experience</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+                      <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </footer>
+        </body>
+        </html>
+                
