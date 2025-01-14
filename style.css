@@ -103,7 +103,6 @@ section{
     box-sizing:border-box;
     overflow: auto;
 }
-/* Add styles for the "About" section */
 #about {
   background-color: rgb(122, 202, 198);
   text-align: center;
@@ -184,6 +183,57 @@ section{
 
 .project-container li {
   margin-bottom: 10px;
+}
+
+/* Contact Section styles */
+#contact {
+  background-color: rgb(122, 202, 198);
+  padding: 50px 0;
+  text-align: center;
+  min-height: 90vh; /* Ensure full height */
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #1e2bdf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #3accd6;
 }
 
 .main-container{
