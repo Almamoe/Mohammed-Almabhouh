@@ -1,25 +1,39 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+function hamburg(){
+  const navbar = document.querySelector(".dropdown")
+  navbar.style.transform = "translateY(0px)"
+}
+function cancel(){
+  const navbar = document.querySelector(".dropdown")
+  navbar.style.transform = "translateY(-500px)"
+}
+// Typewriter Effect
+const texts = [
+  "Software Engineer"
+]
+let speed  =100;
+const textElements = document.querySelector(".typewriter-text");
+let textIndex = 0;
+let charcterIndex = 0;
+function typeWriter(){
+  if (charcterIndex < texts[textIndex].length){
+      textElements.innerHTML += texts[textIndex].charAt(charcterIndex);
+      charcterIndex++;
+      setTimeout(typeWriter, speed);
   }
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".section");
-  
-    window.addEventListener("scroll", function () {
-      const scrollPosition = window.scrollY + window.innerHeight * 0.6;
-  
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-  
-        if (scrollPosition > sectionTop) {
-          section.classList.add("visible");
-        } else {
-          section.classList.remove("visible");
-        }
-      });
-    });
-  });
+  else{
+      setTimeout(eraseText, 1000)
+  }
+}
+function eraseText(){
+  if(textElements.innerHTML.length > 0){
+      textElements.innerHTML = textElements.innerHTML.slice(0,-1);
+      setTimeout(eraseText, 50)
+  }
+  else{
+      textIndex = (textIndex + 1) % texts.length;
+      charcterIndex = 0;
+      setTimeout(typeWriter, 500)
+  }
+}
+window.onload = typeWriter
   

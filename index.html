@@ -2,179 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Mohammed's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="script.js"></script>
+    <title>Mohammed Almabhouh</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#about Me">About Me</a>
-        <a href="#contact me">Contact</a>
-        <a href="#work experience">Work Experience</a>
-    </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="home"></section>
-    <div class="container">
-        <div class="hero-text">
-            <h1 style="font-size:50px">Hello, I am Mohammed Almabhouh</h1>
-            <p>I am a Software Engineer at Western University</p>
-        </div>
-        <div class="section__pic-container">
-            <img src="w3images/Alma Pic.jpg" alt="Mohammed Almabhouh" class = "main-pic" >
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1"> Hello, I'm</p>
-            <h1 class="titel">Mohammed Almabhouh</h1>
-            <p class="section__text__p2">Aspiring Software Engineer</p>
-            <div class="btn-container">
-                <button
-                class="btn btn-color-2"
-                onclick="window.open('w3images/Mohammed Resume.pdf')"
-            >
-            Download CV 
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact Info
-            </button>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Mohammed <span>Almabhouh</span>
             </div>
-
-            <div id="socials-container">
-                <img src="w3images/linkdin.jpg"
-                alt="Linkdin Profile"
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/in/mohammed-almabhouh-9867141b5'"
-            />
-            <img src="w3images/Github.png"
-            alt="Github Profile"
-            class="icon"
-            onclick="location.href='https://github.com/Almamoe'"
-            /> 
-            </div>
-            </div>
-        </section>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
         </div>
-
-
-    <!-- About Section -->
-     <div class="section" id="section1">
-    <section id="about Me"></section>
-    <p class="section__text__p1">More About Me</p>
-    <h1 class="title">About Me</h1>
-    <div class="section__pic-container">
-        <img src="w3images/Almapic.jpg"
-        alt="Profile picture"
-        class="about-pic"
-        />
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
-    <div class="about-details-continer">
-        <div class="about-containers">
-            <div class="details-container-2">
-                <img src ="w3images/Education.jpeg"
-                alt="Education icon"
-                class="icon"
-                />
-                <h3>Education</h3>
-                <p>Student of <br/> Bachelor of Engineering Science<br /> Software Engineering</p>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="w3images/Alma Pic.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Mohammed</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Hello I am a second year software Engineering student, I am very passionate about coding and It. I am an avid reader with mindset to always learn.</p>
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                   
                 </div>
-                </div>
-                <div class="text-container">
-                    <p>Hello! I'm Mohammed Almabhouh, a passionate software engineering student with a keen interest in cybersecurity and technology.</p>
-                </p><br>
-                    <p>I have experience programming in languages like Java, Python, and JavaScript, which has allowed me to build a range of projects. My journey into tech has led me to explore areas like web design and networking, always driven by curiosity and a desire to keep learning.</p>
-            </p><br> 
-                    <p>As a Google-certified cybersecurity specialist, I am continually enhancing my knowledge of security fundamentals and best practices. These certifications reflect my commitment to developing a solid foundation in cybersecurity and applying it to real-world challenges.</p>
-                    <p><br>  
-                    <p>One of my recent projects is a web-based course designed to help tourists in Canada learn essential driving rules. Developed with input from the Ministry of Transportation, this course includes video tutorials and practical, real-world scenarios that encourage users to visualize and understand Canadian road regulations. Inspired by traditional driver’s education, it aims to enhance road safety for tourists and help them feel more confident when driving in Canada.</p>
-                    <p><br>   
-                    <p>Another project I am proud of is a photographic translator designed for visually impaired users. This device, powered by an Arduino and OCR technology, captures and translates on-screen text to enhance the experience of visually impaired users on elliptical machines. This project was a rewarding challenge, as it combined my skills in hardware and software to create an accessible solution for those with vision impairments.</p>
-                </p>       
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Contact Me</button>
                 </div>
             </div>
         </div>
     </section>
-</div>
-    <!-- Work Experience Section -->
-    <h2 style="text-align:center">Work Experience</h2>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <section id="work experience"></section>
-                <img src="w3images/Pic2.jpg" alt="" style="width:50%">
-                <div class="container">
-                    <h2>Seasons Landscaping</h2>
-                    <p class="title">Web Designer & Marketer</p>
-                    <p>Developed marketing solutions using Google Ads, Facebook campaigns, and Kijiji listings, resulting in an 80% increase in targeted traffic and significantly improving customer engagement and brand visibility. Managed a team of 5 employees serving over 70 properties. Designed and developed a website using WordPress and Vistaprint, which led to a notable increase in website traffic and enhanced online presence.</p>
-                    <p>April 2022 - Sept 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="w3images/download.png" alt="" style="width:50%">
-                <div class="container">
-                    <h2>Campus Creative</h2>
-                    <p class="title">Web Designing Coop</p>
-                    <p>Used WordPress to develop and manage websites, including theme customization, plugin configuration, and content management to meet specific business needs, resulting in a 70% increase in website traffic. Operated 3D printers to design and produce prototypes, optimizing settings for precision and material efficiency while troubleshooting hardware and software issues to maintain smooth functionality. Created 3D animations and enhanced visuals using Photoshop, integrating detailed textures and effects to produce high-quality, visually appealing designs.</p>
-                    <p>Oct 2021 - Jan 2022</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="w3images/Pic3.jpeg" alt="" style="width:50%">
-                <div class="container">
-                    <h2>Northern Black Dragon</h2>
-                    <p class="title">Martial Arts Teacher</p>
-                    <p>Led classes for students of various skill levels, teaching martial arts techniques, self-discipline, and physical fitness. Developed personalized training plans, improving student performance and retention. Managed group sessions of 30+ students, fostering a positive and structured learning environment. Organized and conducted belt grading examinations, helping students progress in their martial arts journey. Mentored students in preparation for local and regional martial arts competitions, contributing to several student victories.</p>
-                    <p>2022 Sept - 2024 Nov</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="section" id="section2">
-        <section id="contact">
-            <p class="section__text__p1">Contact Information</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contact-info-upper-container">
-                <img src="w3images/Gamiljpg"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:almamoha664@gmail.com" class = "contactText">almamoha664@gmail.com</a></p>
-                </div>
-                <div class="contact-info-contaainer">
-                    <img src="w3images/linkdin.jpg"
-                    alt="LinkedIn icon"
-                    class="icon contact-icon"
-                    />
-                    <p><a href="https://www.linkedin.com/in/mohammed-almabhouh-9867141b5" class = "contactText">in/mohammedalmabhouh</a></p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer>
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                      <li><a href="index.html#about">About</a></li>
-                      <li><a href="experience.html#experience">Experience</a></li>
-                      <li><a href="projects.html">Projects</a></li>
-                      <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                  </div>
-                </nav>
-              </footer>
-        </body>
-        </html>
-                
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+   
