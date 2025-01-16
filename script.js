@@ -1,3 +1,4 @@
+// Existing functions
 function hamburg(){
   const navbar = document.querySelector(".dropdown")
   navbar.style.transform = "translateY(0px)"
@@ -6,6 +7,7 @@ function cancel(){
   const navbar = document.querySelector(".dropdown")
   navbar.style.transform = "translateY(-500px)"
 }
+
 // Typewriter Effect
 const texts = [
   "Software Engineer"
@@ -36,4 +38,10 @@ function eraseText(){
   }
 }
 window.onload = typeWriter
+
+// New function to scroll to contact section
+document.getElementById('contactMeBtn').addEventListener('click', function() {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
+
   
