@@ -276,7 +276,7 @@ section{
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 .content h1 span{
-    color: #3accd6;
+    color: #eff3f3;
     text-shadow: 0  0 10px #1dc7c7;
 }
 .content .typewriter{
